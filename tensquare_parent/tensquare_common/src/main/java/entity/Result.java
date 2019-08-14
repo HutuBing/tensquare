@@ -27,4 +27,9 @@ public class Result {
         this.code = 2000;
     }
 
+    public Result(boolean flag, Integer code, String msg) {
+        this.flag = flag;
+        this.code = code;
+        this.msg = msg;
+    }
 }
