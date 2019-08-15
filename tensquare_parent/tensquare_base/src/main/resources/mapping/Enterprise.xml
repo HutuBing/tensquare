@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.tensquare.base.entity.Enterprise">
+        <table name="tb_enterprise" schema="tensquare" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" length="20"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false" length="100"/>
+            </basic>
+            <basic name="summary">
+                <column name="summary" nullable="false" length="1000"/>
+            </basic>
+            <basic name="address">
+                <column name="address" nullable="false" length="100"/>
+            </basic>
+            <basic name="labels">
+                <column name="labels" nullable="false" length="100"/>
+            </basic>
+            <basic name="coordinate">
+                <column name="coordinate" nullable="false" length="100"/>
+            </basic>
+            <basic name="ishot">
+                <column name="ishot" nullable="false" length="1"/>
+            </basic>
+            <basic name="logo">
+                <column name="logo" nullable="false" length="100"/>
+            </basic>
+            <basic name="jobcount">
+                <column name="jobcount" nullable="false" precision="11"/>
+            </basic>
+            <basic name="url">
+                <column name="url" nullable="false" length="100"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

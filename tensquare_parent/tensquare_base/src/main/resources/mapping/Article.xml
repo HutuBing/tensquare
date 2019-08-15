@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.tensquare.base.entity.Article">
+        <table name="tb_article" schema="tensquare" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" length="20"/>
+            </id>
+            <basic name="columnid">
+                <column name="columnid" nullable="false" length="20"/>
+            </basic>
+            <basic name="userid">
+                <column name="userid" nullable="false" length="20"/>
+            </basic>
+            <basic name="title">
+                <column name="title" nullable="false" length="100"/>
+            </basic>
+            <basic name="content">
+                <column name="content" nullable="false"/>
+            </basic>
+            <basic name="image">
+                <column name="image" nullable="false" length="100"/>
+            </basic>
+            <basic name="createtime">
+                <column name="createtime" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updatetime">
+                <column name="updatetime" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="ispublic">
+                <column name="ispublic" nullable="false" length="1"/>
+            </basic>
+            <basic name="istop">
+                <column name="istop" nullable="false" length="1"/>
+            </basic>
+            <basic name="visits">
+                <column name="visits" nullable="false" precision="20"/>
+            </basic>
+            <basic name="thumbup">
+                <column name="thumbup" nullable="false" precision="20"/>
+            </basic>
+            <basic name="comment">
+                <column name="comment" nullable="false" precision="20"/>
+            </basic>
+            <basic name="state">
+                <column name="state" nullable="false" length="1"/>
+            </basic>
+            <basic name="channelid">
+                <column name="channelid" nullable="false" length="20"/>
+            </basic>
+            <basic name="url">
+                <column name="url" nullable="false" length="100"/>
+            </basic>
+            <basic name="type">
+                <column name="type" nullable="false" length="1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

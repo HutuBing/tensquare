@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.tensquare.base.entity.Column">
+        <table name="tb_column" schema="tensquare" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" length="20"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false" length="100"/>
+            </basic>
+            <basic name="summary">
+                <column name="summary" nullable="false" length="1000"/>
+            </basic>
+            <basic name="userid">
+                <column name="userid" nullable="false" length="20"/>
+            </basic>
+            <basic name="createtime">
+                <column name="createtime" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="checktime">
+                <column name="checktime" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="state">
+                <column name="state" nullable="false" length="1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

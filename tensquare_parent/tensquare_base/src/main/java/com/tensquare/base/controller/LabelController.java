@@ -1,6 +1,6 @@
 package com.tensquare.base.controller;
 
-import com.tensquare.base.pojo.Label;
+import com.tensquare.base.entity.Label;
 import com.tensquare.base.service.LabelService;
 import entity.Result;
 import entity.StatusCode;

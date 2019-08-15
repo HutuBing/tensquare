@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.tensquare.base.entity.Follow">
+        <table name="tb_follow" schema="tensquare" catalog=""/>
+        <id-class class="com.tensquare.base.entity.FollowPK"/>
+        <attributes>
+            <id name="userid">
+                <column name="userid" length="20"/>
+            </id>
+            <id name="targetuser">
+                <column name="targetuser" length="20"/>
+            </id>
+        </attributes>
+    </entity>
+</entity-mappings>

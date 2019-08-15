@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.tensquare.base.entity.Problem">
+        <table name="tb_problem" schema="tensquare" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" length="20"/>
+            </id>
+            <basic name="title">
+                <column name="title" nullable="false" length="100"/>
+            </basic>
+            <basic name="content">
+                <column name="content" nullable="false"/>
+            </basic>
+            <basic name="createtime">
+                <column name="createtime" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updatetime">
+                <column name="updatetime" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="userid">
+                <column name="userid" nullable="false" length="20"/>
+            </basic>
+            <basic name="nickname">
+                <column name="nickname" nullable="false" length="100"/>
+            </basic>
+            <basic name="visits">
+                <column name="visits" nullable="false" precision="20"/>
+            </basic>
+            <basic name="thumbup">
+                <column name="thumbup" nullable="false" precision="20"/>
+            </basic>
+            <basic name="reply">
+                <column name="reply" nullable="false" precision="20"/>
+            </basic>
+            <basic name="solve">
+                <column name="solve" nullable="false" length="1"/>
+            </basic>
+            <basic name="replyname">
+                <column name="replyname" nullable="false" length="100"/>
+            </basic>
+            <basic name="replytime">
+                <column name="replytime" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.tensquare.base.entity.Admin">
+        <table name="tb_admin" schema="tensquare" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" length="20"/>
+            </id>
+            <basic name="loginname">
+                <column name="loginname" nullable="false" length="100"/>
+            </basic>
+            <basic name="password">
+                <column name="password" nullable="false" length="100"/>
+            </basic>
+            <basic name="state">
+                <column name="state" nullable="false" length="1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

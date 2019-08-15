@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.tensquare.base.entity.Ul">
+        <table name="tb_ul" schema="tensquare" catalog=""/>
+        <id-class class="com.tensquare.base.entity.UlPK"/>
+        <attributes>
+            <id name="userid">
+                <column name="userid" length="20"/>
+            </id>
+            <id name="labelid">
+                <column name="labelid" length="20"/>
+            </id>
+        </attributes>
+    </entity>
+</entity-mappings>

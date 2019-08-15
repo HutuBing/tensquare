@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.tensquare.base.entity.Gathering">
+        <table name="tb_gathering" schema="tensquare" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" length="20"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false" length="100"/>
+            </basic>
+            <basic name="summary">
+                <column name="summary" nullable="false"/>
+            </basic>
+            <basic name="detail">
+                <column name="detail" nullable="false"/>
+            </basic>
+            <basic name="sponsor">
+                <column name="sponsor" nullable="false" length="100"/>
+            </basic>
+            <basic name="image">
+                <column name="image" nullable="false" length="100"/>
+            </basic>
+            <basic name="starttime">
+                <column name="starttime" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="endtime">
+                <column name="endtime" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="address">
+                <column name="address" nullable="false" length="100"/>
+            </basic>
+            <basic name="enrolltime">
+                <column name="enrolltime" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="state">
+                <column name="state" nullable="false" length="1"/>
+            </basic>
+            <basic name="city">
+                <column name="city" nullable="false" length="20"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

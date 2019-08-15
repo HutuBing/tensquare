@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.tensquare.base.entity.Friend">
+        <table name="tb_friend" schema="tensquare" catalog=""/>
+        <id-class class="com.tensquare.base.entity.FriendPK"/>
+        <attributes>
+            <id name="userid">
+                <column name="userid" length="20"/>
+            </id>
+            <id name="friendid">
+                <column name="friendid" length="20"/>
+            </id>
+            <basic name="islike">
+                <column name="islike" nullable="false" length="1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

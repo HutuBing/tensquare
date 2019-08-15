@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.tensquare.base.entity.Recruit">
+        <table name="tb_recruit" schema="tensquare" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" length="20"/>
+            </id>
+            <basic name="jobname">
+                <column name="jobname" nullable="false" length="100"/>
+            </basic>
+            <basic name="salary">
+                <column name="salary" nullable="false" length="100"/>
+            </basic>
+            <basic name="condition">
+                <column name="condition" nullable="false" length="100"/>
+            </basic>
+            <basic name="education">
+                <column name="education" nullable="false" length="100"/>
+            </basic>
+            <basic name="type">
+                <column name="type" nullable="false" length="1"/>
+            </basic>
+            <basic name="address">
+                <column name="address" nullable="false" length="100"/>
+            </basic>
+            <basic name="eid">
+                <column name="eid" nullable="false" length="20"/>
+            </basic>
+            <basic name="createtime">
+                <column name="createtime" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="state">
+                <column name="state" nullable="false" length="1"/>
+            </basic>
+            <basic name="url">
+                <column name="url" nullable="false" length="100"/>
+            </basic>
+            <basic name="label">
+                <column name="label" nullable="false" length="100"/>
+            </basic>
+            <basic name="content1">
+                <column name="content1" nullable="false" length="100"/>
+            </basic>
+            <basic name="content2">
+                <column name="content2" nullable="false" length="100"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

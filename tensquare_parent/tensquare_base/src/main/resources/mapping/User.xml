@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.tensquare.base.entity.User">
+        <table name="tb_user" schema="tensquare" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" length="20"/>
+            </id>
+            <basic name="mobile">
+                <column name="mobile" nullable="false" length="100"/>
+            </basic>
+            <basic name="password">
+                <column name="password" nullable="false" length="100"/>
+            </basic>
+            <basic name="nickname">
+                <column name="nickname" nullable="false" length="100"/>
+            </basic>
+            <basic name="sex">
+                <column name="sex" nullable="false" length="2"/>
+            </basic>
+            <basic name="birthday">
+                <column name="birthday" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="avatar">
+                <column name="avatar" nullable="false" length="100"/>
+            </basic>
+            <basic name="email">
+                <column name="email" nullable="false" length="100"/>
+            </basic>
+            <basic name="regdate">
+                <column name="regdate" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updatedate">
+                <column name="updatedate" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="lastdate">
+                <column name="lastdate" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="online">
+                <column name="online" nullable="false" precision="20"/>
+            </basic>
+            <basic name="interest">
+                <column name="interest" nullable="false" length="100"/>
+            </basic>
+            <basic name="personality">
+                <column name="personality" nullable="false" length="100"/>
+            </basic>
+            <basic name="fanscount">
+                <column name="fanscount" nullable="false" precision="20"/>
+            </basic>
+            <basic name="followcount">
+                <column name="followcount" nullable="false" precision="20"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
