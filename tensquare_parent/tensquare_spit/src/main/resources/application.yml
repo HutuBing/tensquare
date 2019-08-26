@@ -1,0 +1,10 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: tensquare-spit
+  data:
+    mongodb:
+      uri: mongodb://spit:spit123@localhost:27017/spitdb
+  redis:
+    host: localhost
